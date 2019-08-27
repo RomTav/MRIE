@@ -2,7 +2,7 @@
 #' @param dataset data.frame à partir duquel calcule distance aux centres
 #' @param centre: dataframe: chaque ligne correspond à un centre d'une classification
 #' @param ncp: nombre d'axes à garder pour l'ACP normalisant et projetant les observation des dataframes avant le calcul des distances,
-#' si ncp non spécifier: prend pour ncp le nombre d'axes pour lequel est au plus proche de 80% de l'information résumé
+#' si ncp non spécifier: prend pour ncp le nombre d'axes pour lequel le pourcentage d'information résumé est au plus proche de 80%
 #' @return dataframe avec pour chaque observations du dataset: les variables de départ, les distances aux n centres et celui dont elle est le plus proche
 #' @references Voir le package "FactoMineR", "factoextra" et "proxy"
 #' @title La fonction "dist.centre"
