@@ -7,7 +7,7 @@
 #' @param nb.classe: integer, nombre de classes désirées pour la classification
 #' @param interagir: booleen, par défaut FALSE. Si TRUE, permet à l'utilisateur d'interagir avec l'interface en choisissant
 #' notamment au fur et à mesure le nombre d'axes pour l'ACM ou de classes pour la CAH
-#' @param visual: booleen, FALSE par défaut. Si TRUE: plot descriptifs des axes et des classes (prend plus de temps en termes de traitement)
+#' @param visual: booleen, FALSE par défaut. Si TRUE: plot descriptifs des axes et des classes (temps de traitement plus long)
 #' @return list(): renvoie une liste découpée en deux sous-listes décrivant respectivement l'ACM et la CAH.
 #' Pour l'ACM: rend le résultat de la procédure MCA() de r, et un résumé de l'étude des axes
 #' Pour la CAH: rend un résumé des effectifs par classes, un dataframe comprennant les variables caractérisant le plus la classification,
