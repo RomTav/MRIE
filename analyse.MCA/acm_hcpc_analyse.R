@@ -18,7 +18,7 @@
 #' @export
 
 acm_hcpc_analyse<- function(donnee,nb.axe=NA,nb.classe=NA,interagir=FALSE,visual=FALSE,...){
-  if(nb.axe<=1){stop("Choisir un nombre d'axe supérieur à 1 car après commande HCPC de r pour classification refuse le traitement")}
+  if(!is.na(nb.axe)){if(nb.axe<=1){stop("Choisir un nombre d'axe supérieur à 1 car après commande HCPC de r pour classification refuse le traitement")}}
   acm<-acm_analyse(donnee,nbaxe=nb.axe,ask=interagir,visu=visual,...)
   if(interagir){readline(prompt = "appuyer sur entrée pour passer à la classification")}
   classifi<-classif_analyse(acm[[1]],nb.clas = nb.classe,ask = interagir,visu=visual)
